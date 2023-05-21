@@ -1,9 +1,13 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import { getAllFilms } from "@/api/films";
+import FilmCard from "@/components/FilmCard.vue";
 
-let films = ref(null);
+const films = ref(null);
 
+const handleImageClick = (filmId) => {
+  console.log(filmId);
+};
 onMounted(async () => {
   await getAllFilms().then((res) => {
     films.value = res.data;
@@ -12,11 +16,14 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="container">
-    <h2>Films list</h2>
-    <ul>
+  <div class="films">
+    <h1 class="films__header">Вся афиша Краснодара</h1>
+    <ul class="films__list">
       <li v-for="film in films" :key="film.id">
-        {{ film }}
+        <film-card
+          @image-click="(filmId) => handleImageClick(filmId)"
+          :film="film"
+        />
       </li>
     </ul>
   </div>

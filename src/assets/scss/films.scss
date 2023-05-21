@@ -1,0 +1,15 @@
+.films {
+  &__header {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
