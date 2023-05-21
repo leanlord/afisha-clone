@@ -4,19 +4,14 @@ import FilmView from "@/views/FilmView.vue";
 
 const routes = [
   {
-    path: "/*",
-    name: "catchAll",
-    redirect: "/",
-  },
-  {
     path: "/",
-    name: "main",
-    component: () => MainView,
+    name: "home",
+    component: MainView,
   },
   {
     path: "/films/:id",
     name: "film",
-    component: () => FilmView,
+    component: FilmView,
   },
 ];
 
