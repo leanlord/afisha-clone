@@ -7,7 +7,7 @@ const handleSearch = (searchText) => {
 };
 
 const handleHeaderClick = () => {
-  router.push("/main");
+  router.push("/");
 };
 </script>
 
