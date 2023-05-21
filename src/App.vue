@@ -1,9 +1,12 @@
 <template>
-  <main-layout />
+  <div>
+    <the-header />
+    <router-view />
+  </div>
 </template>
 
 <script setup>
-import MainLayout from "@/layouts/MainLayout.vue";
+import TheHeader from "@/components/TheHeader.vue";
 </script>
 
 <style lang="scss">
