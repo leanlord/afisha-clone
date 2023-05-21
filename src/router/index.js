@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import MainView from "@/views/MainView.vue";
 import FilmView from "@/views/FilmView.vue";
 
@@ -21,12 +21,11 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 
 router.beforeEach((to, from, next) => {
-  console.log("ERROR");
   document.title = "Афиша - куда сходить в Краснодаре";
   next();
 });
