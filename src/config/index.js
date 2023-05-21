@@ -3,7 +3,7 @@ const index = {
     apiBaseURI: "http://localhost:3001",
   },
   prod: {
-    apiBaseURI: "http://v1382990.hosted-by-vdsina.ru:3001",
+    apiBaseURI: "https://646a435f183682d614520d36.mockapi.io/api",
   },
 };
 
