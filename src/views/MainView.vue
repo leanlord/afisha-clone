@@ -12,12 +12,14 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h2>Films list</h2>
-  <ul>
-    <li v-for="film in films" :key="film.id">
-      {{ film }}
-    </li>
-  </ul>
+  <div class="container">
+    <h2>Films list</h2>
+    <ul>
+      <li v-for="film in films" :key="film.id">
+        {{ film }}
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style scoped></style>

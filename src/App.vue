@@ -10,3 +10,7 @@ export default {
   components: { MainLayout },
 };
 </script>
+
+<style lang="scss">
+@import "@/assets/scss/index";
+</style>

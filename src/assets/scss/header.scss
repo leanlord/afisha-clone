@@ -1,0 +1,29 @@
+.header {
+  margin-bottom: 30px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  &__head {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transform: translateY(3px);
+  }
+
+  &__button {
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
+  &__city {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
