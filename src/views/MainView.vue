@@ -4,7 +4,7 @@ import { getAllFilms } from "@/api/films";
 import FilmCard from "@/components/FilmCard.vue";
 import router from "@/router";
 
-const films = ref(null);
+const films = ref([]);
 
 const handleImageClick = async (filmId) => {
   await router.push({ name: "film", params: { id: filmId } });
