@@ -2,11 +2,12 @@
 import { onMounted, ref } from "vue";
 import { getAllFilms } from "@/api/films";
 import FilmCard from "@/components/FilmCard.vue";
+import router from "@/router";
 
 const films = ref(null);
 
-const handleImageClick = (filmId) => {
-  console.log(filmId);
+const handleImageClick = async (filmId) => {
+  await router.push({ name: "film", params: { id: filmId } });
 };
 onMounted(async () => {
   await getAllFilms().then((res) => {
