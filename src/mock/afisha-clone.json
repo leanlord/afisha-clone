@@ -1,5 +1,5 @@
 {
-  "uuid": "7f28e3d5-69a9-425d-b729-8c12cd3d6118",
+  "uuid": "2ccef45e-ef47-4fea-8275-fef0094de5df",
   "lastMigration": 27,
   "name": "Afisha clone",
   "endpointPrefix": "",
@@ -9,14 +9,14 @@
   "folders": [],
   "routes": [
     {
-      "uuid": "3bbb6ed0-2129-4683-844f-0a297200e6e6",
+      "uuid": "1ea4ab01-a7b7-4302-b91e-c25cb877e27f",
       "type": "crud",
       "documentation": "",
       "method": "",
       "endpoint": "films",
       "responses": [
         {
-          "uuid": "a1616857-bdd1-4e28-bd13-a60280c453a0",
+          "uuid": "534be63c-245f-458c-bcb4-a1d7f07fd682",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
@@ -40,7 +40,7 @@
   "rootChildren": [
     {
       "type": "route",
-      "uuid": "3bbb6ed0-2129-4683-844f-0a297200e6e6"
+      "uuid": "1ea4ab01-a7b7-4302-b91e-c25cb877e27f"
     }
   ],
   "proxyMode": false,
@@ -88,7 +88,7 @@
   ],
   "data": [
     {
-      "uuid": "3157aa6e-c98d-46ad-8c28-270c98027fab",
+      "uuid": "677dbae5-8894-4d05-8426-1a378be08ef1",
       "id": "bawq",
       "name": "Films",
       "documentation": "",
