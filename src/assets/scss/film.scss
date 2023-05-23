@@ -20,6 +20,16 @@
     color: #fff;
     font-weight: 300;
     font-size: 16px;
+
+    &_modal {
+      align-self: flex-start;
+    }
+  }
+
+  &__buy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   &__header {

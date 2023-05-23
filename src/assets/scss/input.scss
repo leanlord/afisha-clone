@@ -1,0 +1,32 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__head {
+    padding-bottom: 6px;
+    color: #646c9a;
+  }
+
+  & input {
+    padding: 8px 14px;
+    background-color: #fff;
+    border: 1px solid #e2e5ec;
+    border-radius: 4px;
+    line-height: 1;
+    font-size: 0.8rem;
+    color: #495057;
+
+    &:focus {
+      border-color: #9aabff;
+    }
+
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder,
+    &::placeholder {
+      font-weight: 500;
+      color: #e1e1ef;
+    }
+  }
+}
